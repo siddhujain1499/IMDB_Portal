@@ -1,11 +1,11 @@
 import Tkinter as tk
-import imdb
+import imdb_gui
 root=tk.Tk()
 s=tk.StringVar(root)
 def info():
 	root1=tk.Tk()
 	root1.title("Movie : "+s.get())
-	l=imdb.info_movie(s.get())
+	l=imdb_gui.info_movie(s.get())
 	if(not(l)):
 		tk.Label(root1, text="\t").grid(column=0)
 		tk.Label(root1, text="\t").grid(column=2)
@@ -48,7 +48,7 @@ def c1():
 def top():
 	root1=tk.Tk()
 	root1.title("Top Rated Movies")
-	l=imdb.top_movies(int(s.get()))
+	l=imdb_gui.top_movies(int(s.get()))
 	tk.Label(root1, text="\t").grid(column=0)
 	tk.Label(root1, text="\t").grid(column=3)
 	tk.Label(root1, text="THE "+s.get()+" TOP RATED MOVIES ARE :", font=("times", 20)).grid(row=0, column=1, columnspan=2)
@@ -74,7 +74,7 @@ def c2():
 def fold():
 	root1=tk.Tk()
 	root1.title("Renaming of Folders")
-	l=imdb.folder(s.get())
+	l=imdb_gui.folder(s.get())
 	tk.Label(root1, text="\t").grid(column=0)
 	tk.Label(root1, text="\t").grid(column=4)
 	tk.Label(root1, text="\n").grid(row=1)
