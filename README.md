@@ -33,6 +33,6 @@ It is implemented using the **BeautifulSoup** module of **bs4** , **requests** m
 
 **Instructions before using:** If you are going to use the third feature, make sure that all the folders' name contain only the movie name, and no other extra character or whitespace should be left. Also ensure you enter the correct and complete path (e.g.: _/home/user-name/Videos/_  or _/media/user-name/New Volume/Videos_).
 
-**To run the script:** Type `python imdb.py` from your terminal.
+**To run the script:** Type `python app.py` from your terminal.
 
 All the results will be displayed on the terminal, as well as saved in a file called _info.txt_ in the same directory where the script is present.
