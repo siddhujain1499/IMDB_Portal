@@ -99,7 +99,7 @@ def folder(path):
     		data = soup.select('.ratingValue strong span')
     		rating = data[0].get_text('',strip=True)
     		x = x.encode('ascii','ignore')
-    		y = "["+rating+"] "+title+" ("+year+")"
+    		y = "["+rating+"] "+title+" ("+year[:4]+")"
     		y = y.encode('ascii','ignore')
     		l.append(y)
     		status.write ("\n"+y)
