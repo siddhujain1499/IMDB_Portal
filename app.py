@@ -11,7 +11,7 @@ def info():
 		tk.Label(root1, text="\t").grid(column=2)
 		tk.Label(root1, text="\n").grid(row=0)
 		tk.Label(root1, text="\n").grid(row=2)
-		w=tk.Label(root1, text=str("No such movie titled '" + s.get() + "' found"))
+		w=tk.Label(root1, text=str("No such movie title '" + s.get() + "' found"))
 		w.grid(column=1, row=1)
 		root1.mainloop()
 		return
